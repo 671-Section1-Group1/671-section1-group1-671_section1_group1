@@ -1,0 +1,207 @@
+.hero {
+    background-color: #fff;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.carousel-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #f9f9f9;
+}
+
+.carousel-slide {
+    display: none;
+    width: 100%;
+    height: 100%;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.carousel-slide.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Carousel Navigation Arrows */
+.carousel-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    z-index: 10;
+}
+
+.carousel-nav:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-nav.prev {
+    left: 2rem;
+}
+
+.carousel-nav.next {
+    right: 2rem;
+}
+
+/* Carousel Dots */
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+.dot.active {
+    background-color: #000;
+    border-color: #000;
+}
+
+/* ==================== Tabs Section ==================== */
+
+/* Tabs container */
+.pt-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+/* Tab button */
+.pt-tab-btn {
+    padding: 12px 150px;    /* ปุ่มกว้างขึ้น */
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 30px;
+    background: transparent;
+    color: #6f6f6f;
+    border: none;
+    cursor: pointer;
+    transition: .25s ease;
+}
+
+.pt-tab-btn:hover {
+    background: #f4f4f4;
+}
+
+.pt-tab-btn.active {
+    background: #ffffff;
+    border: 1px solid #ddd;
+    color: #000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Tab content wrapper */
+.pt-tab-content {
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transition: opacity .25s ease;
+    margin-bottom: 150px;
+}
+
+.pt-tab-content.active {
+    opacity: 1;
+    visibility: visible;
+    position: relative;
+    margin-bottom: 150px;
+}
+
+/* Product grid (80% width) */
+.pt-products-grid {
+    width: 80%;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 70px 80px;
+    justify-items: center;
+}
+
+/* Product card */
+.pt-product-card {
+    width: 260px;
+    text-align: center;
+    padding: 25px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+    transition: .25s;
+}
+
+.pt-product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 18px rgba(0,0,0,0.12);
+}
+
+.pt-product-card img {
+    width: 100%;
+    border-radius: 8px;
+    background: #fafafa;
+    padding: 10px;
+}
+
+.pt-product-card h3 {
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.pt-product-card p {
+    margin-top: 5px;
+    font-size: 15px;
+    color: #555;
+}

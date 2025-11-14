@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Error Page</title>
+
+    <link rel="stylesheet" href="/css/error.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+   <header class="navbar" id="navbar">
+    <div class="nav-inner">
+        <!-- left side -->
+        <div class="nav-left">
+            <a href="/">
+                <img src="/assets/logos/ophtus_logo.png" alt="OPHTUS" class="logo">
+            </a>
+        </div>
+        <!-- center side -->
+        <nav class="nav-center">
+            <ul class="nav-menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/products">Shop</a></li>
+                <li><a href="/info">AboutUs</a></li>
+            </ul>
+        </nav>
+        <!-- right side -->
+        <div class="nav-right">
+            <button class="icon-btn" onclick="toggleSearch()">
+                <img src="/assets/icons/search.jpg" alt="Search">
+            </button>
+
+            <a href="/cart" class="icon-btn">
+                <img src="/assets/icons/cart.jpg" alt="Cart">
+            </a>
+
+            <a href="/login" class="login-btn">
+                <span class="user-icon">
+                    <img src="/assets/icons/user.png" alt="User Icon">
+                </span>
+                <span>Login</span>
+            </a>
+        </div>
+    </div>
+</header>
+    <main>
+        <img id = "error-icon" 
+        src = "/assets/icons/error-icon.png">
+        <p id = "error">
+            Page not found , Maybe need some glasses.
+        </p>
+        <div id = "button-back">
+        <button onclick="Back()">Back to Home</button>
+        </div>
+    </main>
+
+    
+    <script src="/js/include.js"></script>
+    <script src="/js/error.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<!--Home Page-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="header-placeholder"></div>
+        <div id="search-placeholder"></div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="carousel-container">
+                <div class="carousel-wrapper">
+                    <!-- Carousel Slide 1 -->
+                    <div class="carousel-slide active">
+                        <img src="/assets/landing_scape/Landing_page_1.jpg" alt="SPY FAMILY x OPHTHUS Collaboration">
+                    </div>
+                    <!-- Carousel Slide 2 -->
+                    <div class="carousel-slide">
+                        <img src="/assets/landing_scape/Landing_page_1.jpg" alt="SPY FAMILY x OPHTHUS Collaboration">
+                    </div>
+                </div>
+
+                <!-- Carousel Navigation Arrows -->
+                <button class="carousel-nav prev" id="prevBtn">&#10094;</button>
+                <button class="carousel-nav next" id="nextBtn">&#10095;</button>
+
+                <!-- Carousel Navigation Dots -->
+                <div class="carousel-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Tabs Section -->
+        <section class="pt-tabs-section">
+            <div class="pt-tabs-container">
+
+                <!-- TAB BUTTONS -->
+                <div class="pt-tabs">
+                    <button class="pt-tab-btn active" data-tab="pt-tab1">สินค้าขายดี</button>
+                    <button class="pt-tab-btn" data-tab="pt-tab2">สินค้าใหม่</button>
+                    <button class="pt-tab-btn" data-tab="pt-tab3">สินค้าแนะนำ</button>
+                </div>
+
+                <!-- TAB CONTENT -->
+                <div class="pt-tab-contents">
+
+                    <!-- TAB 1 -->
+                    <div class="pt-tab-content active" id="pt-tab1">
+                        <div class="pt-products-grid">
+                            <div class="pt-product-card">
+                                <img src="/assets/products/Phanton_Black_Clear_Per.png">
+                                <h3>Product 1</h3>
+                                <p>฿2,990.00</p>
+                            </div>
+                            <div class="pt-product-card">
+                                <img src="/assets/products/Phanton_Black_Clear_Per.png">
+                                <h3>Product 2</h3>
+                                <p>฿3,490.00</p>
+                            </div>
+                            <div class="pt-product-card">
+                                <img src="/assets/products/Phanton_Black_Clear_Per.png">
+                                <h3>Product 3</h3>
+                                <p>฿3,990.00</p>
+                            </div>
+                            <div class="pt-product-card">
+                                <img src="/assets/products/Phanton_Black_Clear_Per.png">
+                                <h3>Product 4</h3>
+                                <p>฿2,990.00</p>
+                            </div>
+
+                            <div class="pt-product-card">
+                                <img src="/assets/products/Phanton_Black_Clear_Per.png">
+                                <h3>Product 5</h3>
+                                <p>฿3,490.00</p>
+                            </div>
+
+                            <div class="pt-product-card">
+                                <img src="/assets/products/Phanton_Black_Clear_Per.png">
+                                <h3>Product 6</h3>
+                                <p>฿3,990.00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TAB 2 -->
+                    <div class="pt-tab-content" id="pt-tab2">
+                        <div class="pt-products-grid">
+                            <!-- ของใหม่จะใส่เพิ่มทีหลัง -->
+                        </div>
+                    </div>
+
+                    <!-- TAB 3 -->
+                    <div class="pt-tab-content" id="pt-tab3">
+                        <div class="pt-products-grid">
+                            <!-- ของแนะนำ -->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+
+
+    <script src="/js/include.js"></script>
+    <script src="/js/index.js"></script>
+    <script src="/js/search.js"></script>
+
+</body>
+
+</html>

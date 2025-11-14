@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Delete Product</title>
+
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+    <div id="headerAdmin-placeholder"></div>
+</header>
+
+<section class="delete-section">
+    <div class="delete-container">
+
+        <div class="delete-header">
+            <h1>Delete Product?</h1>
+        </div>
+
+        <div class="warning-box">
+            <p>
+                <strong>Warning:</strong> Deleting this product will remove it from your store.
+                This action cannot be undone.
+            </p>
+        </div>
+
+        <div class="form-footer two-buttons">
+            <button type="button" class="submit-btn outlined"
+                onclick="location.href='product_management'">
+                Cancel
+            </button>
+
+            <button type="button" class="submit-btn p-delete-btn" onclick="deleteProduct()">
+                Delete
+            </button>
+        </div>
+
+    </div>
+</section>
+
+<script src="/js/include.js"></script>
+
+</body>
+</html>

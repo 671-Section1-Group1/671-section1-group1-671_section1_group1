@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product / Service Management</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css" />
+
+</head>
+
+<body>
+  <header><div id="headerAdmin-placeholder"></div></header>
+
+  <div class="container">
+    <h2>Product / Service Management</h2>
+    <p>ค้นหา เพิ่ม แก้ไข และลบข้อมูลสินค้า / บริการ</p>
+
+    <button id="addNewBtn" onclick="location.href='/admin/product/add'">+ Add New</button>
+
+    <div class="flex">
+      <!-- Search Box -->
+      <div class="box">
+        <h4>ค้นหา (Criteria Search)</h4>
+        <input type="text" id="searchCode" placeholder="รหัสสินค้า" />
+        <input type="text" id="searchName" placeholder="ชื่อสินค้า" />
+        <input type="text" id="searchType" placeholder="ประเภท" />
+        <button class="btn btn-edit" onclick="searchProduct()">Search</button>
+        <button class="btn btn-delete" onclick="resetSearch()">Reset</button>
+      </div>
+
+      <!-- Guide Box -->
+      <div class="box">
+        <h4>คำแนะนำ</h4>
+        <ul>
+          <li>กดปุ่ม Add New เพื่อเพิ่มสินค้า/บริการใหม่</li>
+          <li>ใช้ปุ่ม edit หรือ delete เพื่อแก้ไข / ลบข้อมูล</li>
+          <li>ค้นหาจากเงื่อนไขเพื่อให้เจอข้อมูลง่ายขึ้น</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Table Display -->
+    <table>
+      <thead>
+        <tr>
+          <th>รหัส</th>
+          <th>ชื่อ</th>
+          <th>ประเภท</th>
+          <th>ราคา</th>
+          <th>สถานะ</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="productTable"></tbody>
+    </table>
+  </div>
+  <script src="/js/include.js"></script>
+  <script src="/js/product_management.js"></script>
+</body>
+</html>
