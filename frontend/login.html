@@ -1,0 +1,158 @@
+<!--Login Page-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="header-placeholder"></div>
+        <div id="search-placeholder"></div>
+    </header>
+
+    <main>
+        <div id="header-placeholder"></div>
+
+        <section class="login-section">
+            <div class="login-container">
+                <!-- Header -->
+                <div class="login-header">
+                    <h1>Welcome to Ophtus</h1>
+                    <p>Sign in to your account or create a new one</p>
+                </div>
+
+                <!-- Tab Buttons -->
+                <div class="login-tabs">
+                    <button class="tab-btn active" data-tab="signin">Sign In</button>
+                    <button class="tab-btn" data-tab="signup">Sign Up</button>
+                </div>
+
+                <!-- Sign In Form -->
+                <form id="signin-form" class="login-form" method="POST" action="/api/auth/login">
+                    <!-- Email Field -->
+                    <div class="form-group">
+                        <label for="signin-email">Email</label>
+                        <input type="email" id="signin-email" name="email" placeholder="your.email@example.com" required
+                            autocomplete="email">
+                    </div>
+
+                    <!-- Password Field -->
+                    <div class="form-group">
+                        <label for="signin-password">Password</label>
+                        <div class="password-wrapper">
+                            <input type="password" id="signin-password" name="password"
+                                placeholder="Enter your password" required autocomplete="current-password">
+                            <button type="button" class="password-toggle" onclick="togglePassword('signin-password')">
+                                <img src="/assets/icons/eye.png" alt="Toggle Password Visibility">
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Form Footer (Remember me / Forgot password) -->
+                    <div class="form-footer">
+                        <label>
+                            <input type="checkbox" name="remember" value="true">
+                            Remember me
+                        </label>
+                        <a href="forgot-password.html">Forgot password?</a>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="submit-btn">Sign In</button>
+                </form>
+
+                <!-- Sign Up Form (Hidden by default) -->
+                <form id="signup-form" class="login-form" style="display: none;" method="POST"
+                    action="/api/auth/register">
+                    <!-- Name Fields (Side-by-side) -->
+                    <div class="form-group name-group">
+                        <div class="name-field">
+                            <label for="signup-first-name">First Name</label>
+                            <input type="text" id="signup-first-name" name="first_name" placeholder="First Name"
+                                required autocomplete="given-name">
+                        </div>
+                        <div class="name-field">
+                            <label for="signup-last-name">Last Name</label>
+                            <input type="text" id="signup-last-name" name="last_name" placeholder="Last Name" required
+                                autocomplete="family-name">
+                        </div>
+                    </div>
+
+                    <!-- Email Field -->
+                    <div class="form-group">
+                        <label for="signup-email">Email Address</label>
+                        <input type="email" id="signup-email" name="email" placeholder="your.email@example.com" required
+                            autocomplete="email">
+                    </div>
+
+                    <!-- Phone Number Field -->
+                    <div class="form-group">
+                        <label for="signup-phone">Phone Number</label>
+                        <input type="tel" id="signup-phone" name="phone_number" placeholder="xxx-xxx-xxxx" required
+                            autocomplete="tel">
+                    </div>
+
+                    <!-- Password Field -->
+                    <div class="form-group">
+                        <label for="signup-password">Password</label>
+                        <div class="password-wrapper">
+                            <input type="password" id="signup-password" name="password" placeholder="Create a password"
+                                required autocomplete="new-password">
+                            <button type="button" class="password-toggle" onclick="togglePassword('signup-password')">
+                                <img src="/assets/icons/eye.png" alt="Toggle Password Visibility">
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Confirm Password Field -->
+                    <div class="form-group">
+                        <label for="signup-confirm-password">Confirm Password</label>
+                        <div class="password-wrapper">
+                            <input type="password" id="signup-confirm-password" name="confirm_password"
+                                placeholder="Confirm your password" required autocomplete="new-password">
+                            <button type="button" class="password-toggle"
+                                onclick="togglePassword('signup-confirm-password')">
+                                <img src="/assets/icons/eye.png" alt="Toggle Password Visibility">
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Form Footer (Terms & Conditions) -->
+                    <div class="form-footer">
+                        <label>
+                            <input type="checkbox" name="agree_terms" value="true" required>
+                            I agree to the <a href="#" target="_blank">Terms of Service</a> and <a href="#"
+                                target="_blank">Privacy Policy</a>
+                        </label>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="submit-btn">Sign Up</button>
+                </form>
+
+                <!-- Help Link -->
+                <div class="help-link">
+                    Need help? Contact our <a href="mailto:pongsakorn.p999@gmail.com" class="customer-support">customer support team</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    
+    <div id="footer-placeholder"></div>
+  
+
+    <script src="/js/include.js"></script>
+    <script src="/js/search.js"></script>
+    <script src="/js/auth.js"></script>
+    <script src="/js/tabswitching.js"></script>
+</body>
+
+</html>

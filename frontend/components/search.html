@@ -1,0 +1,40 @@
+<!-- Search Modal -->
+
+<div id="search-modal" class="search-modal">
+    <div class="search-box">
+
+        <span class="close-btn" onclick="toggleSearch()">✕</span>
+
+        <h2 class="search-title">Advanced search</h2>
+
+        <div class="search-group">
+            <label class="filter-label">ชื่อ</label>
+            <input type="text" id="search-name" placeholder="Product name" class="filter-input">
+        </div>
+
+        <div class="search-group">
+            <label class="filter-label">วัสดุ</label>
+            <input type="text" id="search-material" placeholder="Material" class="filter-input">
+        </div>
+
+        <div class="search-group">
+            <label class="filter-label">เลนส์</label>
+            <input type="text" id="search-lens" placeholder="Lens" class="filter-input">
+        </div>
+
+        <div class="search-group">
+            <label class="filter-label">ราคา</label>
+            <div class="price-box">
+                <input type="number" id="price-min" placeholder="Min" class="filter-input price-input">
+                <span class="price-separator">-</span>
+                <input type="number" id="price-max" placeholder="Max" class="filter-input price-input">
+            </div>
+        </div>
+
+        <div class="search-actions">
+            <button type="button" class="search-btn" onclick="performSearch()">Search</button>
+            <button type="button" class="clear-btn" onclick="clearSearch()">Clear</button>
+        </div>
+
+    </div>
+</div>

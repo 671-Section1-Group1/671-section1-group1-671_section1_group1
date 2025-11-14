@@ -1,0 +1,53 @@
+<!-- Shopping Cart -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping Cart</title>
+
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div id="header-placeholder"></div>
+        <div id="search-placeholder"></div>
+    </header>
+
+    <main class="cart-page">
+        <div class="cart-container">
+
+            <div class="cart-header">
+                <h1 class="cart-title">SHOPPING CART</h1>
+            </div>
+
+            <div class="cart-columns">
+                <span>สินค้า</span>
+                <span>ราคา</span>
+                <span>จำนวน</span>
+                <span>ลบ</span>
+            </div>
+
+            <div class="cart-items" id="cart-items"></div>
+
+            <div class="cart-total">
+                <p>Total : <span id="cart-total-price">฿0</span></p>
+                <button class="payment-btn">Payment</button>
+            </div>
+
+        </div>
+    </main>
+
+    
+    <div id="footer-placeholder"></div>
+    
+
+    <script src="/js/include.js"></script>
+    <script src="/js/search.js"></script>
+    <script src="/js/cart.js"></script>
+
+</body>
+</html>
