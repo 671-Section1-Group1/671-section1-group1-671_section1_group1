@@ -9,6 +9,7 @@ const authRoutes = require("./routes/auth");
 const searchRoutes = require("./routes/search");
 const adminRoutes = require("./routes/admin");
 const productRoutes = require("./routes/products");
+const homeRoutes = require("./routes/home");
 
 const app = express();
 
@@ -44,6 +45,7 @@ app.use("/api/auth", authRoutes);
 app.use("/api/search", searchRoutes);
 app.use("/api/admin", adminRoutes);
 app.use("/api/products", productRoutes);
+app.use("/api/home", homeRoutes);
 
 app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "..", "frontend", "index.html"));
