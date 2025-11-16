@@ -63,16 +63,66 @@ SELECT * FROM users;
 SELECT * FROM products;
 INSERT INTO products (name, material, lens, category, price, stock, description, image_url)
 VALUES
-('SPYGAME EYEWEAR', 'Acetate', 'Dark', 'Eyeglasses', 3490.00, 10, 'แว่นตาเลนส์กรองแสงสีฟ้า รุ่น SPYGAME EYEWEAR', '../assets/products/Phanton_Black_Clear_Per.png'),
-('WAKU WAKU EYEWEAR', 'Nickel-Titanium', 'Blush', 'Eyeglasses', 2990.00, 10, 'แว่นตาเลนส์กรองแสงสีฟ้า รุ่น ', '../assets/products/Phanton_Black_Clear_Per.png'),
-('PHANTOM', 'Exated Stainless Steel', 'Clear', 'Eyeglasses', 3990.00, 10, 'แว่นตาเลนส์กรองแสงสีฟ้า รุ่น Product3', '../assets/products/Phanton_Black_Clear_Per.png'),
-('ZERO', 'Nova Ultem', 'Black', 'Eyeglasses', 2290.00, 10, 'แว่นตาเลนส์กรองแสงสีฟ้า รุ่น Product4', '../assets/products/Phanton_Black_Clear_Per.png'),
-('HOVER 2.0', 'Nickel-Titanium', 'clear', 'Eyeglasses', 2490.00, 10, 'แว่นตาเลนส์กรองแสงสีฟ้า รุ่น Product5', '../assets/products/Phanton_Black_Clear_Per.png'),
-('NEBULA 2.0', 'Nickel-Titanium', 'Blush', 'Eyeglasses', 2490.00, 10, 'แว่นตาเลนส์กรองแสงสีฟ้า รุ่น Product6', '../assets/products/Phanton_Black_Clear_Per.png'),
-('INFINITE', 'Nova Ultem', 'Clear', 'Eyeglasses', 1790.00, 10, 'แว่นตาเลนส์กรองแสงสีฟ้า รุ่น Product6', '../assets/products/Phanton_Black_Clear_Per.png'),
-('SABER', 'Nova Ultem', 'Clear', 'Eyeglasses', 2290.00, 10, 'แว่นตาเลนส์กรองแสงสีฟ้า รุ่น Product6', '../assets/products/Phanton_Black_Clear_Per.png'),
-('LIMITLESS', 'Stainless Steel', 'Clear', 'Eyeglasses', 1990.00, 10, 'แว่นตาเลนส์กรองแสงสีฟ้า รุ่น Product6', '../assets/products/Phanton_Black_Clear_Per.png'),
-('FUSE', 'Acetate', 'Clear', 'Eyeglasses', 2490.00, 10, 'แว่นตาเลนส์กรองแสงสีฟ้า รุ่น Product6', '../assets/products/Phanton_Black_Clear_Per.png');
+('SPYGAME EYEWEAR', 'Acetate', 'Dark', 'Eyeglasses', 3490.00, 10,
+ 'ดีไซน์เรียบเท่ด้วยวัสดุ Acetate คุณภาพสูง เบาและทนทาน เลนส์กรองแสงช่วยลดอาการล้าจากหน้าจอ เหมาะกับสายทำงานและสายเกมที่ต้องการแว่นพรีเมียมโทนจริงจัง',
+ '../assets/products/Phanton_Black_Clear_Per.png'),
+
+('WAKU WAKU EYEWEAR', 'Nickel-Titanium', 'Blush', 'Eyeglasses', 2990.00, 10,
+ 'โครง Nickel-Titanium น้ำหนักเบาพิเศษ ยืดหยุ่นสูง ไม่เป็นสนิม โทนสี Blush ช่วยเพิ่มความสดใสและความละมุน สวมใส่สบายทั้งวันโดยแทบไม่รู้สึกว่าใส่แว่น',
+ '../assets/products/Phanton_Black_Clear_Per.png'),
+
+('PHANTOM', 'Exated Stainless Steel', 'Clear', 'Eyeglasses', 3990.00, 10,
+ 'แว่นสเตนเลสพรีเมียมรุ่น PHANTOM น้ำหนักเบา แข็งแรง ดีไซน์เรียบหรู เลนส์กรองแสงช่วยลดความล้า เหมาะกับคนที่ชอบสไตล์มินิมอลที่ดูแพงและทันสมัย',
+ '../assets/products/Phanton_Black_Clear_Per.png'),
+
+('ZERO', 'Nova Ultem', 'Black', 'Eyeglasses', 2290.00, 10,
+ 'เฟรม Nova Ultem ที่ขึ้นชื่อเรื่องความเบาและทนความร้อนสูง ดีไซน์บางเฉียบ น้ำหนักเบามาก ใส่แล้วไม่บีบหน้า เหมาะกับการใช้งานตลอดวัน',
+ '../assets/products/Phanton_Black_Clear_Per.png'),
+
+('HOVER 2.0', 'Nickel-Titanium', 'Clear', 'Eyeglasses', 2490.00, 10,
+ 'ดีไซน์ลอยตัวแบบมินิมอล ใช้วัสดุ Nickel-Titanium ที่ยืดหยุ่นและทนทานสุด ๆ ช่วยให้สวมใส่สบาย ไม่หนักหน้า เหมาะกับทุกลุคทุกสถานการณ์',
+ '../assets/products/Phanton_Black_Clear_Per.png'),
+
+('NEBULA 2.0', 'Nickel-Titanium', 'Blush', 'Eyeglasses', 2490.00, 10,
+ 'ดีไซน์บางเบาในโทน Blush ดูอบอุ่นและทันสมัย วัสดุ Nickel-Titanium ยืดหยุ่นดี ไม่กดทับ สวมสบายทั้งวัน เหมาะกับสายมินิมอลที่ชอบความเรียบเนียน',
+ '../assets/products/Phanton_Black_Clear_Per.png'),
+
+('INFINITE', 'Nova Ultem', 'Clear', 'Eyeglasses', 1790.00, 10,
+ 'เฟรม Ultem ที่เด็ดสุดในด้านความเบาและทนทาน ให้ความรู้สึกโปร่งสบาย ใส่แล้วหน้าไม่ล้า เหมาะกับคนที่ต้องการแว่นคุณภาพดีราคาคุ้มมาก',
+ '../assets/products/Phanton_Black_Clear_Per.png'),
+
+('SABER', 'Nova Ultem', 'Clear', 'Eyeglasses', 2290.00, 10,
+ 'ลุคคมกริบด้วยดีไซน์ทรงทันสมัย วัสดุ Ultem เบาและทนความร้อนสูง ใส่ทำงานหรือเรียนทั้งวันได้แบบไม่หนักหน้า ดูดีแบบเรียบง่ายแต่มีพลัง',
+ '../assets/products/Phanton_Black_Clear_Per.png'),
+
+('LIMITLESS', 'Stainless Steel', 'Clear', 'Eyeglasses', 1990.00, 10,
+ 'เฟรมบางเฉียบจาก Stainless Steel แข็งแรง น้ำหนักเบา ให้ลุคโปรสะอาดตามาก ๆ เหมาะกับการใช้งานทุกวันและเข้ากันได้กับทุกสไตล์',
+ '../assets/products/Phanton_Black_Clear_Per.png'),
+
+('FUSE', 'Acetate', 'Clear', 'Eyeglasses', 2490.00, 10,
+ 'เฟรม Acetate ดีไซน์หนาแต่เบากว่าที่คิด ให้ลุคแฟชั่นแบบพรีเมียม ใส่แล้วหน้ามีมิติ เหมาะกับคนที่ต้องการสไตล์จัดเต็มแต่ยังสบายตา',
+ '../assets/products/Phanton_Black_Clear_Per.png'),
+
+('FALCON', 'Exated Stainless Steel', 'Clear', 'Eyeglasses', 3990.00, 10,
+ 'ดีไซน์ดุดันแบบพรีเมียม เรียวบาง น้ำหนักเบา ตัวเฟรมแข็งแรงสุด ๆ เลนส์กรองแสงช่วยถนอมสายตา เหมาะกับคนที่ชอบลุคเฉียบคมและเป็นเอกลักษณ์',
+ '../assets/products/Phanton_Black_Clear_Per.png'),
+
+('HALO', 'Exated Stainless Steel', 'Clear', 'Eyeglasses', 3990.00, 10,
+ 'แว่นทรงมินิมอลหวาน ๆ ด้วยเส้นเฟรมบางเรียบหรู วัสดุแข็งแรงและเบา เลนส์กรองแสงช่วยลดอาการล้า เหมาะกับสายที่ชอบความเรียบพรีเมียม',
+ '../assets/products/Phanton_Black_Clear_Per.png'),
+
+('LIFELINE', 'Exated Stainless Steel', 'Clear', 'Eyeglasses', 3990.00, 10,
+ 'ดีไซน์ร่วมสมัยแบบเส้นสายคลีน ๆ วัสดุสเตนเลสพรีเมียม น้ำหนักเบา ใส่แล้วหน้าไม่หนัก เหมาะกับคนที่ชอบแว่นเรียบง่าย ไม่ฉูดฉาด แต่ดูแพง',
+ '../assets/products/Phanton_Black_Clear_Per.png'),
+
+('SPITFIRE', 'Exated Stainless Steel', 'Amber', 'Eyeglasses', 3990.00, 10,
+ 'ลุคเข้มมีโทน Amber สวยโดดเด่น วัสดุสเตนเลสคุณภาพสูง ทนทานและเบา ให้ความรู้สึกมั่นใจทุกครั้งที่ใส่ เหมาะกับคนที่อยากได้แว่นมีคาแรกเตอร์',
+ '../assets/products/Phanton_Black_Clear_Per.png'),
+
+('KEPLER', 'Stainless Steel', 'Clear', 'Eyeglasses', 2490.00, 10,
+ 'ดีไซน์คลีนสุดมินิมอล เฟรม Stainless Steel เบาและดูหรู สวมใส่ง่ายกับทุกรูปหน้า เหมาะกับการใช้งานจริงได้ทุกวัน ไม่ว่าจะทำงาน เรียน หรือออกนอกบ้าน',
+ '../assets/products/Phanton_Black_Clear_Per.png');
+
 SET FOREIGN_KEY_CHECKS = 1;
 
 UPDATE products 
