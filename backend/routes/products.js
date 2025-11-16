@@ -2,7 +2,7 @@ const express = require("express");
 const router = express.Router();
 const db = require("../db");
 
-// ✅ ดูสินค้าทั้งหมด
+// ดูสินค้าทั้งหมด
 router.get("/", (req, res) => {
   const sql = `SELECT * FROM products`;
   db.query(sql, (err, results) => {
@@ -11,7 +11,7 @@ router.get("/", (req, res) => {
   });
 });
 
-// ✅ ดูสินค้าตาม ID
+// ดูสินค้าตาม ID
 router.get("/:id", (req, res) => {
   const { id } = req.params;
   const sql = `SELECT * FROM products WHERE id = ?`;

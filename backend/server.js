@@ -78,8 +78,8 @@ app.get("/info", (req, res) => {
 });
 
 
-app.get("/User_account", (req, res) => {
-    res.sendFile(path.join(__dirname, "..", "frontend", "User_account.html"));
+app.get("/user_account", (req, res) => {
+    res.sendFile(path.join(__dirname, "..", "frontend", "user_account.html"));
 });
 
 
@@ -92,6 +92,17 @@ app.get("/error", (req, res) => {
     res.sendFile(path.join(__dirname, "..", "frontend", "error.html"));
 });
 
+app.get("/product_management_add", (req, res) => {
+    res.sendFile(path.join(__dirname, "..", "frontend", "product_management_add.html"));
+});
+
+app.get("/indexAdmin", (req, res) => {
+    res.sendFile(path.join(__dirname, "..", "frontend", "contacts.html"));
+});
+
+app.get("/lookbook", (req, res) => {
+    res.sendFile(path.join(__dirname, "..", "frontend", "lookbook.html"));
+});
 
 app.use((req, res) => {
     res.status(404).sendFile(path.join(__dirname, "..", "frontend", "error.html"));

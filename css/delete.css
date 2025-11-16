@@ -1,0 +1,97 @@
+/* -------------------------
+   DELETE PAGE LAYOUT
+------------------------- */
+
+.delete-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.delete-container {
+    width: 100%;
+    max-width: 650px;
+    background: #fff;
+    padding: 35px 40px;
+    border: 1px solid #cfcfcf;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+/* -------------------------
+   HEADER
+------------------------- */
+.delete-header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.delete-header p {
+    color: #555;
+    font-size: 15px;
+}
+
+/* -------------------------
+   WARNING BOX
+------------------------- */
+.warning-box {
+    background: #fafafa;
+    padding: 18px 16px;
+    margin: 25px 0;
+    border-left: 4px solid red;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* -------------------------
+   BUTTON SECTION
+------------------------- */
+.two-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+/* Cancel Button */
+.submit-btn.outlined {
+    background: #fff;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 10px 22px;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.submit-btn.outlined:hover {
+    background: #f3f3f3;
+}
+
+/* Delete Button */
+.p-delete-btn {
+    background: red;
+    color: #fff;
+    border: none;
+    padding: 10px 22px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .2s;
+    border-radius: 25px;
+}
+
+.p-delete-btn:hover {
+    opacity: 0.85;
+    background: rgb(255, 50, 50);
+}
+
+/* General button look */
+.submit-btn {
+    font-size: 15px;
+}

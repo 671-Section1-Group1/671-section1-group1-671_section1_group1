@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Account Management</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/product_management.css">
+</head>
+
+<body>
+    <header>
+        <div id="headerAdmin-placeholder"></div>
+    </header>
+
+    <div class="container">
+        <h2>User Account Management</h2>
+        <p>ค้นหา เพิ่ม แก้ไข และลบบัญชีผู้ใช้งาน</p>
+
+        <button id="addUserBtn">+ Add New User</button>
+
+        <div class="flex">
+
+            <!-- Search Users -->
+            <div class="box">
+                <h4>ค้นหา (Criteria Search)</h4>
+
+                <input type="text" id="searchFname" placeholder="ชื่อจริง">
+                <input type="text" id="searchLname" placeholder="นามสกุล">
+                <input type="text" id="searchEmail" placeholder="อีเมล">
+
+                <button class="btn btn-edit" onclick="searchUser()">Search</button>
+                <button class="btn btn-delete" onclick="resetSearch()">Reset</button>
+            </div>
+
+            <!-- Guide -->
+            <div class="box">
+                <h4>คำแนะนำ</h4>
+                <ul>
+                    <li>กดปุ่ม Add New User เพื่อเพิ่มบัญชีใหม่</li>
+                    <li>ใช้ปุ่ม Edit หรือ Delete เพื่อจัดการบัญชีผู้ใช้งาน</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Table -->
+        <table>
+            <thead>
+                <tr>
+                    <th>ชื่อ</th>
+                    <th>นามสกุล</th>
+                    <th>อีเมล</th>
+                    <th>บทบาท</th>
+                    <th>สถานะ</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+
+            <tbody id="userTable"></tbody>
+        </table>
+    </div>
+
+    <script src="/js/include.js"></script>
+    <script src="/js/user_account.js"></script>
+
+</body>
+
+</html>

@@ -44,66 +44,74 @@
         </section>
 
         <!-- Product Tabs Section -->
-        <section class="tabs-section">
-            <div class="tabs-container">
-                <div class="tabs">
-                    <button class="tab-btn active" data-tab="tab1">สินค้าขายดี</button>
-                    <button class="tab-btn" data-tab="tab2">สินค้าใหม่</button>
-                    <button class="tab-btn" data-tab="tab3">สินค้าแนะนำ</button>
+        <section class="pt-tabs-section">
+            <div class="pt-tabs-container">
+
+                <!-- TAB BUTTONS -->
+                <div class="pt-tabs">
+                    <button class="pt-tab-btn active" data-tab="pt-tab1">สินค้าขายดี</button>
+                    <button class="pt-tab-btn" data-tab="pt-tab2">สินค้าใหม่</button>
+                    <button class="pt-tab-btn" data-tab="pt-tab3">สินค้าแนะนำ</button>
                 </div>
-                <div class="tab-contents">
-                    <div class="tab-content active" id="tab1">
-                        <div class="products-grid" id="best-sellers-products">
-                            <!-- Best Sellers Products will be dynamically inserted here  ทำตยไว้ก่อน -->
-                            <div class="product-list">
-                                <div class="product-card">
-                                    <img src="/assets/products/Phanton_Black_Clear_Per.png" alt="Product 1">
-                                    <h3>Product 1</h3>
-                                    <p>฿2,990.00</p>
-                                </div>
-                                <div class="product-card">
-                                    <img src="/assets/products/Phanton_Black_Clear_Per.png" alt="Product 2">
-                                    <h3>Product 2</h3>
-                                    <p>฿3,490.00</p>
-                                </div>
-                                <div class="product-card">
-                                    <img src="/assets/products/Phanton_Black_Clear_Per.png" alt="Product 3">
-                                    <h3>Product 3</h3>
-                                    <p>฿3,990.00</p>
-                                </div>
-                                <div class="product-card">
-                                    <img src="/assets/products/Phanton_Black_Clear_Per.png" alt="Product 4">
-                                    <h3>Product 4</h3>
-                                    <p>฿3,990.00</p>
-                                </div>
-                                <div class="product-card">
-                                    <img src="/assets/products/Phanton_Black_Clear_Per.png" alt="Product 5">
-                                    <h3>Product 5</h3>
-                                    <p>฿3,990.00</p>
-                                </div>
-                                <div class="product-card">
-                                    <img src="/assets/products/Phanton_Black_Clear_Per.png" alt="Product 6">
-                                    <h3>Product 6</h3>
-                                    <p>฿3,990.00</p>
-                                </div>
-                                
+
+                <!-- TAB CONTENT -->
+                <div class="pt-tab-contents">
+
+                    <!-- TAB 1 -->
+                    <div class="pt-tab-content active" id="pt-tab1">
+                        <div class="pt-products-grid">
+                            <div class="pt-product-card">
+                                <img src="/assets/products/Phanton_Black_Clear_Per.png">
+                                <h3>Product 1</h3>
+                                <p>฿2,990.00</p>
+                            </div>
+                            <div class="pt-product-card">
+                                <img src="/assets/products/Phanton_Black_Clear_Per.png">
+                                <h3>Product 2</h3>
+                                <p>฿3,490.00</p>
+                            </div>
+                            <div class="pt-product-card">
+                                <img src="/assets/products/Phanton_Black_Clear_Per.png">
+                                <h3>Product 3</h3>
+                                <p>฿3,990.00</p>
+                            </div>
+                            <div class="pt-product-card">
+                                <img src="/assets/products/Phanton_Black_Clear_Per.png">
+                                <h3>Product 4</h3>
+                                <p>฿2,990.00</p>
+                            </div>
+
+                            <div class="pt-product-card">
+                                <img src="/assets/products/Phanton_Black_Clear_Per.png">
+                                <h3>Product 5</h3>
+                                <p>฿3,490.00</p>
+                            </div>
+
+                            <div class="pt-product-card">
+                                <img src="/assets/products/Phanton_Black_Clear_Per.png">
+                                <h3>Product 6</h3>
+                                <p>฿3,990.00</p>
                             </div>
                         </div>
                     </div>
-                    <div class="tab-content" id="tab2">
-                        <div class="products-grid" id="new-arrivals-products">
-                            <!-- New Arrivals Products will be dynamically inserted here ทำตยไว้ก่อน -->           
+
+                    <!-- TAB 2 -->
+                    <div class="pt-tab-content" id="pt-tab2">
+                        <div class="pt-products-grid">
+                            <!-- ของใหม่จะใส่เพิ่มทีหลัง -->
                         </div>
                     </div>
-                    <div class="tab-content" id="tab3">
-                        <div class="products-grid" id="recommended-products">
-                            <!-- Recommended Products will be dynamically inserted here ทำตยไว้ก่อน -->
+
+                    <!-- TAB 3 -->
+                    <div class="pt-tab-content" id="pt-tab3">
+                        <div class="pt-products-grid">
+                            <!-- ของแนะนำ -->
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
-
     </main>
 
     <div id="footer-placeholder"></div>

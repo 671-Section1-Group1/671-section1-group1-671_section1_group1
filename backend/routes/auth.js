@@ -3,7 +3,7 @@ const express = require("express");
 const router = express.Router();
 const db = require("../db");
 
-// ✅ สมัครสมาชิก
+// สมัครสมาชิก
 router.post("/register", (req, res) => {
   const { first_name, last_name, email, phone_number, password, confirm_password } = req.body;
 

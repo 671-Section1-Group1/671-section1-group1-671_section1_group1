@@ -107,78 +107,101 @@
 }
 
 /* ==================== Tabs Section ==================== */
-.tabs-section {
-    background-color: #fff;
-    padding: 2rem;
-}
 
-.tabs-container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.tabs {
+/* Tabs container */
+.pt-tabs {
     display: flex;
-    gap: 3rem;
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 2rem;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e5e5e5;
 }
 
-.tab-main-btn{
-    background: none;
+/* Tab button */
+.pt-tab-btn {
+    padding: 12px 150px;    /* ปุ่มกว้างขึ้น */
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 30px;
+    background: transparent;
+    color: #6f6f6f;
     border: none;
-    padding: 1rem 0;
-    font-size: 1rem;
-    color: #999;
     cursor: pointer;
-    position: relative;
-    transition: color 0.3s ease;
+    transition: .25s ease;
 }
 
-.tab-main-btn.active {
+.pt-tab-btn:hover {
+    background: #f4f4f4;
+}
+
+.pt-tab-btn.active {
+    background: #ffffff;
+    border: 1px solid #ddd;
     color: #000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
-.tab-main-btn.active::after {
-    content: '';
+/* Tab content wrapper */
+.pt-tab-content {
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
     position: absolute;
-    bottom: -1px;
     left: 0;
     right: 0;
-    height: 2px;
+    transition: opacity .25s ease;
+    margin-bottom: 150px;
 }
 
-.tab-pane {
-    display: none;
+.pt-tab-content.active {
+    opacity: 1;
+    visibility: visible;
+    position: relative;
+    margin-bottom: 150px;
 }
 
-.tab-pane.active {
-    display: block;
-}
-
-/* Product Grid - 3 คอลัมน์ 2 แถว */
-.product-list {
+/* Product grid (80% width) */
+.pt-products-grid {
+    width: 80%;
+    margin: 40px auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 คอลัมน์ */
-    gap: 25px;
-    margin-bottom: 250px;
-    justify-items: center; /* จัดสินค้าในแต่ละคอลัมน์ให้กึ่งกลาง */
-    align-items: center;   /* จัดสินค้าในแต่ละแถวให้กึ่งกลาง */
-
+    grid-template-columns: repeat(3, 1fr);
+    gap: 70px 80px;
+    justify-items: center;
 }
 
-/* สำหรับหน้าจอที่มีขนาดเล็กลง (Tablet) */
-@media (max-width: 768px) {
-    .product-list {
-        grid-template-columns: repeat(2, 1fr); /* 2 คอลัมน์ */
-    }
+/* Product card */
+.pt-product-card {
+    width: 260px;
+    text-align: center;
+    padding: 25px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.06);
+    transition: .25s;
 }
 
-/* สำหรับหน้าจอที่มีขนาดเล็กที่สุด (Mobile) */
-@media (max-width: 480px) {
-    .product-list {
-        grid-template-columns: 1fr; /* 1 คอลัมน์ */
-    }
+.pt-product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 18px rgba(0,0,0,0.12);
 }
 
+.pt-product-card img {
+    width: 100%;
+    border-radius: 8px;
+    background: #fafafa;
+    padding: 10px;
+}
 
+.pt-product-card h3 {
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.pt-product-card p {
+    margin-top: 5px;
+    font-size: 15px;
+    color: #555;
+}

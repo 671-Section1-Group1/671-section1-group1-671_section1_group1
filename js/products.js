@@ -20,7 +20,7 @@ async function loadProducts() {
     if (query.priceMax) params.append("priceMax", query.priceMax);
 
     try {
-        // ✅ เรียก API จาก backend (Node.js)
+        // เรียก API จาก backend (Node.js)
         const res = await fetch(`http://localhost:3000/api/search?${params.toString()}`);
         const products = await res.json();
 
@@ -32,7 +32,7 @@ async function loadProducts() {
             return;
         }
 
-        // ✅ แสดงสินค้าทั้งหมด
+        // แสดงสินค้าทั้งหมด
         products.forEach(p => {
             // Ensure image URL is absolute path
             let imageUrl = p.image_url || '/assets/products/default.png';
@@ -61,7 +61,7 @@ async function loadProducts() {
             `;
         });
 
-        // ✅ ต้องเรียกหลังโหลดสินค้าเสร็จ
+        // ต้องเรียกหลังโหลดสินค้าเสร็จ
         initAddToCartButtons();
     } catch (err) {
         console.error("Error loading products:", err);
@@ -87,7 +87,7 @@ function initAddToCartButtons() {
             };
 
             addToCart(product);
-            console.log("Added to Cart:", product);
+            alert("Added to your cart");
         });
     });
 }

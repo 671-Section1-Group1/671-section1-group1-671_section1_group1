@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lookbook – OPHTUS Eyeglasses</title>
+    <!-- CSS เดิมของเว็บ -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <!-- CSS สำหรับ Lookbook -->
+    <link rel="stylesheet" href="/css/lookbook.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<header class="navbar" id="navbar">
+    <div class="nav-inner">
+        <!-- left side -->
+        <div class="nav-left">
+            <a href="/">
+                <img src="/assets/logos/ophtus_logo.png" alt="OPHTUS" class="logo">
+            </a>
+        </div>
+        <nav class="nav-center">
+            <ul class="nav-menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/products">Shop</a></li>
+                <li><a href="/info">AboutUs</a></li>
+                <li><a href="/lookbook">Style</Match-up></a></li> <!-- ส่วนนี้คือสำหรับ public API -->
+            </ul>
+        </nav>
+        <!-- right side -->
+        <div class="nav-right">
+            <button class="icon-btn" onclick="toggleSearch()">
+                <img src="/assets/icons/search.jpg" alt="Search">
+            </button>
+
+            <a href="/cart" class="icon-btn">
+                <img src="/assets/icons/cart.jpg" alt="Cart">
+            </a>
+
+            <a href="/login" class="login-btn">
+                <span class="user-icon">
+                    <img src="/assets/icons/user.png" alt="User Icon">
+                </span>
+                <span>Login</span>
+            </a>
+        </div>
+    </div>
+</header>
+<body>
+    <main>
+            <!-- Lookbook Content -->
+    <div class="lookbook-container">
+        <h1 class="lookbook-title">Search Eyeglass Styles</h1>
+
+        <div class="lookbook-search">
+            <input type="text" id="lookbook-input" placeholder="Search glasses style...(e.g. sunglasses)">
+            <button id="lookbook-btn">Search</button>
+        </div>
+
+        <div id="lookbook-results" class="lookbook-grid"></div>
+    </div>
+    </main>
+    <!-- JS สำหรับ Lookbook -->
+    <script src="/js/lookbook.js"></script>
+</body>
+</html>
